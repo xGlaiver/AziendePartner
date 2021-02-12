@@ -699,6 +699,7 @@ main {
 .evidence_inside h3 {
   color: #FF8400;
   margin-bottom: 56px;
+  font-weight: 900;
 }
 
 .evidence_inside .evidence_images img {
