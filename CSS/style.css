@@ -206,8 +206,8 @@ main {
   height: 100%;
   border-radius: 40px;
   background: linear-gradient(124deg, rgba(255, 132, 0, 0.8) 0, rgba(51, 255, 217, 0.4) 25%, rgba(51, 255, 217, 0.2) 50%, rgba(51, 255, 217, 0.4) 70%, white 100%);
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
   z-index: -1;
   opacity: 0.3;
 }
@@ -358,6 +358,8 @@ main {
 }
 
 .levels .level .level-images .level-box2 {
+  position: relative;
+  top: 30px;
   width: 492px;
   height: 228px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -365,8 +367,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -384,8 +387,29 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+.levels .level .level-images .level-box4 {
+  position: relative;
+  top: 70px;
+  width: 276px;
+  height: 228px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -415,94 +439,69 @@ main {
   margin-top: 53px;
 }
 
-.levels .level-2 .circlePinkSmall {
+.levels .level-2 .circleOrangeSmall {
   position: absolute;
   z-index: -1;
   bottom: -70px;
-  left: 230px;
+  right: 170px;
 }
 
-.levels .level-2 .circleTealBig {
+.levels .level-2 .circlePurpleSmall {
   position: absolute;
   z-index: -2;
-  top: -40px;
-  left: 0;
+  top: 18px;
+  right: 200px;
 }
 
 .levels .level-3 {
   margin-top: 73px;
 }
 
-.levels .level-3 .rectOrangeSmall {
+.levels .level-3 .rectTealSmall {
   position: absolute;
   z-index: -1;
-  top: 45px;
-  left: 350px;
+  top: 40px;
+  left: 370px;
 }
 
-.levels .level-3 .reactPinkBig {
+.levels .level-3 .rectPinkSmall {
   position: absolute;
   z-index: -2;
-  top: 0;
-  right: 80px;
+  top: 40px;
+  right: 194px;
 }
 
-/* Benefits */
-.benefits {
+.levels .level-4 {
+  margin-top: 73px;
+}
+
+.levels .level-4 .rectTealSmall2 {
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 200px;
+}
+
+.levels .level-4 .rectPinkSmall2 {
+  position: absolute;
+  z-index: -2;
+  top: 40px;
+  left: 300px;
+}
+
+/* Choice */
+.choice {
   width: 1321px;
   margin: 65px 16.20% 400px 15%;
   position: relative;
   top: 200px;
 }
 
-.benefits .benefits-background {
-  min-height: 521px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.4));
-  border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-}
-
-.benefits .benefits-background hgroup {
-  width: 996px;
-  padding-top: 32px;
-  padding-left: 68px;
-}
-
-.benefits .benefits-background hgroup h3 {
-  color: #33FFD9;
-  font-weight: 500;
-}
-
-.benefits .benefits-background hgroup p {
-  font-weight: 400;
-  margin-top: 12px;
-}
-
-.benefits .benefits-background hgroup h6 {
-  font-weight: 500;
-  margin-top: 24px;
-}
-
-.benefits .benefits-background img {
-  position: relative;
-  top: 5rem;
-  left: 5rem;
-  z-index: -100;
-}
-
-.benefits .priceWithImg {
+.choice .choiceWithImg {
   position: relative;
 }
 
-.benefits .priceWithImg .price {
+.choice .choiceWithImg .path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,174 +511,198 @@ main {
   bottom: 140px;
 }
 
-.benefits .priceWithImg .price_base {
+.choice .choiceWithImg .path_start {
   width: 581px;
   height: 481px;
   border-radius: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(#f90173));
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), #f90173);
+  background-color: rgba(255, 255, 255, 0.3);
   position: relative;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.benefits .priceWithImg .price_base > hgroup {
-  margin-top: 32px;
-  margin-left: 64px;
-}
-
-.benefits .priceWithImg .price_base > hgroup h3 {
+.choice .choiceWithImg .path_start > hgroup h3 {
   color: #33FFD9;
   font-weight: 500;
 }
 
-.benefits .priceWithImg .price_base > hgroup p {
+.choice .choiceWithImg .path_start > hgroup p {
   margin-top: 12px;
   font-weight: 400;
 }
 
-.benefits .priceWithImg .price_base > hgroup h1 {
+.choice .choiceWithImg .path_start > hgroup h1 {
   font-size: 80px;
   font-weight: 500;
   margin-top: 22px;
 }
 
-.benefits .priceWithImg .price_base > hgroup h6 {
+.choice .choiceWithImg .path_start > hgroup h6 {
   font-weight: 500;
 }
 
-.benefits .priceWithImg .price_base > hgroup hgroup {
+.choice .choiceWithImg .path_start > hgroup hgroup {
   margin-top: 16px;
 }
 
-.benefits .priceWithImg .price_base > hgroup hgroup h6 {
+.choice .choiceWithImg .path_start > hgroup hgroup h6 {
   margin-top: 12px;
 }
 
-.benefits .priceWithImg .price_base button {
-  width: 460px;
-  height: 65px;
-  font-family: "Press Start 2P", cursive;
-  font-size: 18px;
-  background-color: #33FFD9;
-  color: #F90173;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.benefits .priceWithImg .price_premium {
-  width: 581px;
-  height: 481px;
-  border-radius: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#33ffda));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), #33ffda);
-  position: relative;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-}
-
-.benefits .priceWithImg .price_premium > hgroup {
-  margin-top: 32px;
-  margin-left: 64px;
-}
-
-.benefits .priceWithImg .price_premium > hgroup h3 {
-  color: #F90173;
-  font-weight: 500;
-}
-
-.benefits .priceWithImg .price_premium > hgroup p {
-  margin-top: 12px;
-  font-weight: 400;
-}
-
-.benefits .priceWithImg .price_premium > hgroup h1 {
-  font-size: 80px;
-  font-weight: 500;
-  margin-top: 22px;
-}
-
-.benefits .priceWithImg .price_premium > hgroup h6 {
-  font-weight: 500;
-}
-
-.benefits .priceWithImg .price_premium > hgroup hgroup {
-  margin-top: 16px;
-}
-
-.benefits .priceWithImg .price_premium > hgroup hgroup h6 {
-  margin-top: 12px;
-}
-
-.benefits .priceWithImg .price_premium button {
+.choice .choiceWithImg .path_start button {
   width: 460px;
   height: 65px;
   font-family: "Press Start 2P", cursive;
   font-size: 18px;
   background-color: #F90173;
   color: #fff;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   outline: none;
   border: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.benefits .priceWithImg .circle-base {
+.choice .choiceWithImg .path_end {
+  width: 581px;
+  height: 481px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice .choiceWithImg .path_end > hgroup {
+  max-width: 442px;
+}
+
+.choice .choiceWithImg .path_end > hgroup h3 {
+  color: #33FFD9;
+  font-weight: 500;
+}
+
+.choice .choiceWithImg .path_end > hgroup p {
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.choice .choiceWithImg .path_end > hgroup h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.choice .choiceWithImg .path_end > hgroup h6 {
+  font-weight: 500;
+}
+
+.choice .choiceWithImg .path_end > hgroup hgroup {
+  margin-top: 16px;
+}
+
+.choice .choiceWithImg .path_end > hgroup hgroup h6 {
+  margin-top: 12px;
+}
+
+.choice .choiceWithImg .path_end button {
+  width: 460px;
+  height: 65px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
+  background-color: #F90173;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice .choiceWithImg .circle-start {
   position: absolute;
-  top: 140px;
-  left: 220px;
+  top: 80px;
+  left: 100px;
   z-index: -1;
 }
 
-.benefits .priceWithImg .circle-premium {
+.choice .choiceWithImg .circle-end {
   position: absolute;
-  top: 140px;
-  right: -30px;
+  top: 80px;
+  right: 100px;
   z-index: -1;
 }
 
-.benefits .circle-benefits {
+.choice .circle-benefits {
   position: absolute;
   top: -100px;
   right: -170px;
   z-index: -20;
 }
 
-/* Lines Teal*/
-.lineTeal1 {
-  position: absolute;
-  bottom: 643px;
-  border-top: 3px solid #33FFD9;
-  width: 18%;
-  z-index: -1;
+/* Evidence */
+.evidence {
+  margin: 280px 0 0 15%;
+  position: relative;
 }
 
-.lineTeal2 {
+.evidence_line {
+  border-top: 1px solid #FF8400;
   position: absolute;
-  bottom: 590px;
-  border-top: 3px solid #33FFD9;
-  width: 18%;
-  z-index: -1;
-  opacity: 0.8;
+  width: 80%;
+  top: 25px;
+  right: 0;
 }
 
-.lineTeal3 {
-  position: absolute;
-  bottom: 538px;
-  border-top: 3px solid #33FFD9;
-  width: 18%;
-  z-index: -1;
-  opacity: 0.5;
+.evidence_inside {
+  width: 1321px;
+  margin-right: 16.20%;
+}
+
+.evidence_inside h3 {
+  color: #FF8400;
+  margin-bottom: 56px;
+}
+
+.evidence_inside .evidence_images img {
+  margin-right: 108px;
 }
 
 /* Footer */
