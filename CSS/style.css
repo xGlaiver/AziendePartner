@@ -685,7 +685,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level .level-images .level-box1 {
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -717,7 +717,8 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level .level-images .level-box2 {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    top: 0;
   }
 }
 
@@ -749,7 +750,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level .level-images .level-box3 {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     top: 0;
   }
 }
@@ -782,7 +783,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level .level-images .level-box4 {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     top: 0;
   }
 }
@@ -807,7 +808,6 @@ main {
 @media only screen and (max-width: 1620px) {
   .levels .level-1 .circlePinkSmall {
     right: 120px;
-    top: 150px;
   }
 }
 
@@ -827,7 +827,7 @@ main {
 @media only screen and (max-width: 1620px) {
   .levels .level-1 .circleTealSmall {
     right: 100px;
-    top: 20px;
+    top: -30px;
   }
 }
 
@@ -844,7 +844,7 @@ main {
 .levels .level-2 .circleOrangeSmall {
   position: absolute;
   z-index: -1;
-  bottom: -70px;
+  bottom: -20px;
   right: 170px;
 }
 
@@ -869,7 +869,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level-2 .circlePurpleSmall {
-    top: 58px;
+    top: -18px;
     right: 125px;
   }
 }
@@ -884,6 +884,12 @@ main {
   margin-top: 73px;
 }
 
+@media only screen and (max-width: 1620px) {
+  .levels .level-3 {
+    margin-top: 53px;
+  }
+}
+
 .levels .level-3 .rectTealSmall {
   position: absolute;
   z-index: -1;
@@ -893,7 +899,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level-3 .rectTealSmall {
-    top: 20px;
+    top: -30px;
     left: 500px;
   }
 }
@@ -913,7 +919,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level-3 .rectPinkSmall {
-    top: 20px;
+    top: -30px;
     right: 114px;
   }
 }
@@ -928,6 +934,12 @@ main {
   margin-top: 73px;
 }
 
+@media only screen and (max-width: 1620px) {
+  .levels .level-4 {
+    margin-top: 53px;
+  }
+}
+
 .levels .level-4 .rectTealSmall2 {
   position: absolute;
   z-index: -1;
@@ -937,7 +949,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level-4 .rectTealSmall2 {
-    top: 20px;
+    top: -30px;
     left: 440px;
   }
 }
@@ -957,7 +969,7 @@ main {
 
 @media only screen and (max-width: 1620px) {
   .levels .level-4 .rectPinkSmall2 {
-    top: 20px;
+    top: -30px;
     left: 530px;
   }
 }

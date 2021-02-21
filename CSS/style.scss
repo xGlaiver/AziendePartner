@@ -492,7 +492,7 @@ main {
                 backdrop-filter: blur(12px);
 
                 @include mq1620 {
-                    margin: 50px auto 0 auto;
+                    margin: 0 auto 0 auto;
                 }
 
                 @include mq1171 {
@@ -513,7 +513,8 @@ main {
                 backdrop-filter: blur(12px);
 
                 @include mq1620 {
-                    margin: 50px auto 0 auto;
+                    margin: 0 auto;
+                    top: 0;
                 }
 
                 @include mq1171 {
@@ -534,7 +535,7 @@ main {
                 backdrop-filter: blur(12px);
 
                 @include mq1620 {
-                    margin: 50px auto 0 auto;
+                    margin: 0 auto;
                     top: 0;
                 }
 
@@ -556,7 +557,7 @@ main {
                 backdrop-filter: blur(12px);
 
                 @include mq1620 {
-                    margin: 50px auto 0 auto;
+                    margin: 0 auto;
                     top: 0;
                 }
 
@@ -579,7 +580,6 @@ main {
 
             @include mq1620 {
                 right: 120px;
-                top: 150px;
             }
 
             @include mq1171 {
@@ -595,7 +595,7 @@ main {
 
             @include mq1620 {
                 right: 100px;
-                top: 20px;
+                top: -30px;
             }
 
             @include mq1171 {
@@ -610,7 +610,7 @@ main {
         .circleOrangeSmall {
             position: absolute;
             z-index: -1;
-            bottom: -70px;
+            bottom: -20px;
             right: 170px;
 
             @include mq1620 {
@@ -629,7 +629,7 @@ main {
             right: 200px;
 
             @include mq1620 {
-                top: 58px;
+                top: -18px;
                 right: 125px;
             }
 
@@ -642,6 +642,10 @@ main {
     .level-3 {
         margin-top: 73px;
 
+        @include mq1620 {
+            margin-top: 53px;
+        }
+
         .rectTealSmall {
             position: absolute;
             z-index: -1;
@@ -649,7 +653,7 @@ main {
             left: 370px;
 
             @include mq1620 {
-                top: 20px;
+                top: -30px;
                 left: 500px;
             }
 
@@ -665,7 +669,7 @@ main {
             right: 194px;
 
             @include mq1620 {
-                top: 20px;
+                top: -30px;
                 right: 114px;
             }
 
@@ -678,6 +682,10 @@ main {
     .level-4 {
         margin-top: 73px;
 
+        @include mq1620 {
+            margin-top: 53px;
+        }
+
         .rectTealSmall2 {
             position: absolute;
             z-index: -1;
@@ -685,7 +693,7 @@ main {
             left: 200px;
 
             @include mq1620 {
-                top: 20px;
+                top: -30px;
                 left: 440px;
             }
 
@@ -701,7 +709,7 @@ main {
             left: 300px;
 
             @include mq1620 {
-                top: 20px;
+                top: -30px;
                 left: 530px;
             }
 
