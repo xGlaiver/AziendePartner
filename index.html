@@ -36,9 +36,11 @@
             <div class="overlay">
                 <a href="javascript:void(0)" class="close-links">&times;</a>
                 <div class="overlay-links">
-                  <a class="nav__item_1" href="https://universapp.tech/p/Percorsi/">PERCORSI</a>
-                  <a class="nav__item_2" href="https://universapp.tech/p/Pricing/">PRICING</a>
-                  <a class="nav__item_3" href="https://sso.teachable.com/secure/418132/users/sign_up?flow_school_id=418132">SIGN_UP / LOG_IN</a>
+                    <a class="nav__item_1" href="https://universapp.tech/p/Percorsi/">PERCORSI</a>
+                    <a class="nav__item_2" href="https://universapp.tech/p/Pricing/">PRICING</a>
+                    <a class="nav__item_4" href="#">AZIENDE</a>
+                    <a class="nav__item_5" href="#">OFFERTE LAVORO</a>
+                    <a class="nav__item_3" href="https://sso.teachable.com/secure/418132/users/sign_up?flow_school_id=418132">SIGN_UP / LOG_IN</a>
                 </div>
               </div>
     </header>
@@ -146,7 +148,7 @@
                             <h3>Parti da 0?</h3>
                             <p>Comincia a studiare con i nostri corsi per beginners</p>
                             </hgroup>
-                            <img src="https://i.imgur.com/hW5mJnJ.png" alt="LevelUp">
+                            <img class="levelUp" src="https://i.imgur.com/hW5mJnJ.png" alt="LevelUp">
                         <a href="# "><button>Scopri i corsi pro <img src="https://i.imgur.com/9nejnB3.png" alt="Vector"></button></a>                            
                     </div>
                     <div class="path_end">
@@ -154,7 +156,7 @@
                             <h3>Hai già esperienza?</h3>
                             <p>Scegli un’offerta lavorativa e specializzati sulle tecnologie dell’azienda</p>                  
                         </hgroup>
-                        <img src="https://i.imgur.com/JjVEMBp.png" alt="GameOver">
+                        <img class="gameOver" src="https://i.imgur.com/JjVEMBp.png" alt="GameOver">
                         <a href="#"><button>Cerca lavoro <img src="https://i.imgur.com/9nejnB3.png" alt="Vector"></button></a>  
                     </div>
                 </div>
@@ -178,38 +180,54 @@
 
     <!----------------- Footer ----------------->
     <footer>
-        <section class="footer__left">
-            <div class="footer__textLeft">
-                <h6>CONTACTS</h6>
-                <div class="footer__icons">
-                    <a href="https://www.facebook.com/universaapp" ><img src="https://imgur.com/gt69QEo.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/univers_app/"><img src="https://imgur.com/zxglDr5.png" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/company/68534701"><img src="https://imgur.com/X3s2b2A.png" alt="Linkedin"></a>
+        <div class="footer">
+            <section class="footer__left">
+                <div class="footer__textLeft">
+                    <h6>CONTACTS</h6>
+                    <div class="footer__icons">
+                        <a href="https://www.facebook.com/universaapp" ><img src="https://imgur.com/gt69QEo.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/univers_app/"><img src="https://imgur.com/zxglDr5.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/company/68534701"><img src="https://imgur.com/X3s2b2A.png" alt="Linkedin"></a>
+                    </div>
+                    <hgroup>
+                        <p>e-mail</p>
+                        <p>info.universapp@gmail.com</p>
+                    </hgroup>
+                    <div class="policy">
+                        <a href="https://universapp.tech/p/privacy">Privacy Policy</a>
+                        <p>-</p>
+                        <a href="https://universapp.tech/p/cookie-policy">Cookie Policy</a>
+                        <p>-</p>
+                        <a href="https://universapp.tech/p/terms">Terms of use</a>
+                    </div>
                 </div>
-                <hgroup>
-                    <p>e-mail</p>
-                    <p>info.universapp@gmail.com</p>
-                </hgroup>
-                <div class="policy">
-                    <a href="https://universapp.tech/p/privacy">Privacy Policy</a>
-                    <p>-</p>
-                    <a href="https://universapp.tech/p/cookie-policy">Cookie Policy</a>
-                    <p>-</p>
-                    <a href="https://universapp.tech/p/terms">Terms of use</a>
+            </section>
+            <section class="footer__right">
+                <div class="footer__textRight">
+                    <hgroup>
+                        <h6>THOUGHT IN SICILY</h6>
+                        <h6>MADE ON-LINE</h6>
+                        <h6>DEVELOPED & DESIGNED IN PALERMO</h6>
+                    </hgroup> 
+                    <img class="we-icon" src="https://imgur.com/aOzWCfP.png" alt="We Icon">
                 </div>
-            </div>
-        </section>
-        <section class="footer__right">
-            <div class="footer__textRight">
-                <hgroup>
-                    <h6>THOUGHT IN SICILY</h6>
-                    <h6>MADE ON-LINE</h6>
-                    <h6>DEVELOPED & DESIGNED IN PALERMO</h6>
-                </hgroup> 
-                <img class="we-icon" src="https://imgur.com/aOzWCfP.png" alt="We Icon">
-            </div>
-        </section>
+            </section>
+        </div>       
     </footer>
+
+    <script>
+        document.querySelector(".open-links").addEventListener("click",function(){
+        document.querySelector(".overlay").style.height = "100%";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".overlay").style.overflowY = "visible";
+        });
+  
+        document.querySelector(".close-links").addEventListener("click",function(){
+        document.querySelector(".overlay").style.height = 0;
+        document.querySelector("body").style.overflowY = "visible";
+        document.querySelector(".overlay").style.overflowY = "hidden";
+        });
+    </script>
     
 </body>
 </html>
