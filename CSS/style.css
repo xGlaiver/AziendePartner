@@ -1004,6 +1004,7 @@ main {
     min-width: 329px;
     width: 55%;
     position: relative;
+    top: 30px;
   }
 }
 
@@ -1407,7 +1408,7 @@ main {
 
 @media only screen and (max-width: 804px) {
   .evidence {
-    margin: 380px auto 0;
+    margin: 200px auto 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1475,7 +1476,7 @@ main {
 
 @media only screen and (max-width: 804px) {
   .evidence_inside {
-    margin: 380px auto 0;
+    margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

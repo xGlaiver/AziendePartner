@@ -738,6 +738,7 @@ main {
         min-width: 329px;
         width: 55%;
         position: relative;
+        top: 30px;
     }
     
     .choiceWithImg {
@@ -1063,7 +1064,7 @@ main {
     position: relative;
 
     @include mq804 {
-        margin: 380px auto 0;
+        margin: 200px auto 0;
         justify-content: space-between;
         min-width: 329px;
         width: 55%;
@@ -1112,7 +1113,7 @@ main {
         }
     
         @include mq804 {
-            margin: 380px auto 0;
+            margin: 0 auto;
             justify-content: space-between;
             min-width: 329px;
             width: 55%;
